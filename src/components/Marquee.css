@@ -1,0 +1,17 @@
+.marquee-strip {
+  background: var(--yellow);
+  overflow: hidden; padding: 14px 0;
+  border-top: none; border-bottom: none;
+}
+.marquee-inner {
+  display: flex; white-space: nowrap;
+  animation: marquee 25s linear infinite;
+  width: max-content;
+}
+.marquee-item {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.1rem; letter-spacing: 0.12em;
+  color: var(--black);
+  padding: 0 8px;
+}
+.marquee-sep { color: rgba(0,0,0,0.4); margin-left: 8px; }

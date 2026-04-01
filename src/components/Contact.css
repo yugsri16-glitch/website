@@ -1,0 +1,98 @@
+.contact-section {
+  background: var(--black);
+  border-top: 1px solid rgba(255,255,255,0.04);
+  position: relative;
+}
+.contact-section::before {
+  content: '';
+  position: absolute; bottom: 0; left: 0; right: 0; height: 400px;
+  background: radial-gradient(ellipse at bottom, rgba(255,224,0,0.05), transparent 70%);
+  pointer-events: none;
+}
+
+.contact-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px; align-items: start;
+}
+
+.contact-body {
+  font-size: 1.05rem; line-height: 1.8;
+  color: rgba(245,245,240,0.6); margin: 32px 0 40px;
+  max-width: 440px;
+}
+
+.contact-socials { display: flex; flex-direction: column; gap: 16px; }
+.social-card {
+  display: flex; align-items: center; gap: 16px;
+  background: var(--gray); padding: 20px 24px;
+  border: 1px solid rgba(255,255,255,0.06);
+  text-decoration: none; color: var(--white);
+  transition: all 0.3s ease;
+  position: relative; overflow: hidden;
+}
+.social-card::before {
+  content: '';
+  position: absolute; left: 0; top: 0; bottom: 0;
+  width: 2px; background: var(--yellow);
+  transform: scaleY(0); transition: transform 0.3s ease;
+}
+.social-card:hover { border-color: rgba(255,224,0,0.3); transform: translateX(8px); }
+.social-card:hover::before { transform: scaleY(1); }
+.social-card:hover .social-arrow { color: var(--yellow); }
+
+.social-icon { font-size: 1.5rem; }
+.social-info { flex: 1; }
+.social-label {
+  display: block; font-family: 'Space Mono', monospace;
+  font-size: 0.6rem; letter-spacing: 0.2em;
+  color: rgba(255,255,255,0.3); text-transform: uppercase; margin-bottom: 2px;
+}
+.social-handle { font-size: 1rem; font-weight: 700; }
+.social-arrow { color: rgba(255,255,255,0.2); transition: color 0.3s; }
+
+/* Hire Card */
+.hire-card {
+  background: var(--gray);
+  border: 1px solid rgba(255,224,0,0.2);
+  padding: 40px;
+  position: sticky; top: 120px;
+  animation: borderGlow 4s ease-in-out infinite;
+}
+.hire-header {
+  display: flex; align-items: center; gap: 12px; margin-bottom: 24px;
+}
+.hire-badge {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.65rem; letter-spacing: 0.2em;
+  background: var(--yellow); color: var(--black);
+  padding: 6px 14px; font-weight: 700;
+}
+.hire-status-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: #4ade80; animation: pulse 2s infinite;
+  box-shadow: 0 0 10px #4ade80;
+}
+.hire-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2rem; margin-bottom: 24px; letter-spacing: 0.05em;
+}
+
+.hire-list { list-style: none; display: flex; flex-direction: column; gap: 12px; margin-bottom: 32px; }
+.hire-item {
+  display: flex; align-items: center; gap: 12px;
+  font-size: 0.9rem; color: rgba(245,245,240,0.75);
+}
+.hire-check { color: var(--yellow); font-size: 0.7rem; }
+
+.hire-btn {
+  width: 100%;
+  justify-content: center;
+  padding: 16px !important;
+  font-size: 0.85rem !important;
+}
+
+@media (max-width: 900px) {
+  .contact-inner { grid-template-columns: 1fr; gap: 48px; }
+  .hire-card { position: static; }
+}
