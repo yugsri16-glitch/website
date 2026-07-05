@@ -1,9 +1,9 @@
 import "./Contact.css";
 
 const socials = [
-  { label: "Instagram", handle: "@yugsri3", icon: "📸", url: "https://instagram.com/yugsri3", color: "#E1306C" },
+  { label: "Instagram", handle: "@yug.in", icon: "📸", url: "https://instagram.com/yugsri3", color: "#E1306C" },
   { label: "Telegram", handle: "@roch3003", icon: "✈️", url: "https://t.me/roch3003", color: "#2CA5E0" },
-  { label: "Discord", handle: "flameses456", icon: "🎮", url: "#", color: "#7289DA" },
+  { label: "Discord", handle: "yug.in", icon: "🎮", url: "#", color: "#7289DA" },
 ];
 
 export default function Contact() {
@@ -17,7 +17,7 @@ export default function Contact() {
               LET'S<br /><span className="highlight">WORK</span><br />TOGETHER
             </h2>
             <p className="contact-body">
-              Got a project? Need a thumbnail? Want an AI agent built? Want fire social media content? Hit me up — I respond fast and deliver faster.
+              Got a project? Need hosting? Want an AI agent built? Want fire social media content? Hit me up — I respond fast and deliver faster.
             </p>
             <div className="contact-socials">
               {socials.map(s => (
