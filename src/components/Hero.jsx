@@ -95,7 +95,7 @@ export default function Hero() {
             { num: "18", label: "Years Old" },
             { num: "7+", label: "Skills Mastered" },
             { num: "∞", label: "Passion Level" },
-            { num: "₹", label: "Revenue Earned" },
+            { num: "2000+$", label: "Revenue Earned" },
           ].map((s) => (
             <div className="stat" key={s.label}>
               <span className="stat-num">{s.num}</span>
