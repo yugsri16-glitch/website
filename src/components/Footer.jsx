@@ -10,7 +10,7 @@ export default function Footer() {
             <span className="logo-yellow">SRI</span><span className="logo-bracket">]</span>
           </div>
           <p className="footer-copy">
-            © 2025 Yug Srivastava · Kanpur, India · Built with 🔥
+            © 2026 Yug Srivastava · Kanpur, India · Built with 🔥
           </p>
           <div className="footer-links">
             <a href="https://instagram.com/yugsri3" target="_blank" rel="noopener noreferrer">IG</a>
