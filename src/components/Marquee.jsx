@@ -4,7 +4,7 @@ export default function Marquee() {
   const items = [
     "AI AGENTS", "BOT DEVELOPMENT", "VIDEO EDITING", "GRAPHIC DESIGN",
     "SOCIAL MEDIA", "THUMBNAIL DESIGN", "WEB DEV", "AUTOMATION",
-    "CONTENT CREATION", "MOTION DESIGN", "BRAND IDENTITY", "CODING",
+    "CONTENT CREATION", "MOTION DESIGN", "DATA ANALITCS", "CODING",
   ];
   const doubled = [...items, ...items];
 
