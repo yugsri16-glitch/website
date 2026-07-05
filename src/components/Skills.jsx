@@ -38,9 +38,9 @@ const skills = [
     level: 87,
   },
   {
-    icon: "🖼️", title: "Thumbnail Design",
-    desc: "CTR-optimized thumbnails for YouTube that stop the scroll and get the click.",
-    tags: ["Photoshop", "Typography", "Color Theory"],
+    icon: "🖼️", title: "Data Analytics",
+    desc: "your ability to solve specific business problems, reduce costs, or increase revenue..",
+    tags: ["Power BI", "SQL", "Panda py"],
     level: 94,
   },
 ];
