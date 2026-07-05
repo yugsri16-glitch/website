@@ -60,7 +60,7 @@ export default function Hero() {
       <div className="hero-content container">
         <div className="hero-tag reveal visible">
           <span className="blink-dot" />
-          <span>Available for hire — 2025</span>
+          <span>Available for hire — 2026</span>
         </div>
 
         <div className="hero-name-wrap">
